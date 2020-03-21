@@ -997,3 +997,13 @@ footer img {
 h2 {
     transition : color 1s;
 }
+
+/* A little game */
+
+.playGame {
+  font-size: 1rem; 
+  color: black; 
+  background: rgb(114,217,228);
+  border: none;
+  border-radius: 4px;
+  margin-left: 12px;
