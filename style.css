@@ -945,6 +945,7 @@ footer img {
 
 
 /*  Javascript */
+/* Dark mode */
 
 .chkbox {
     display: none;
@@ -968,3 +969,31 @@ footer img {
     color: var(--text-color);
   }
   
+  /* Modale */
+/* 
+  .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(206, 218, 130, 0.1);
+  }
+
+  .modal-wrapper {
+    overflow: auto;
+    width: 600px;
+    padding: 20px;
+    background-color: white;
+    max-width: calc(100vh - 20px);
+    max-height: calc(100vh - 20px);
+  } */
+
+  /* Change color of H2 */
+
+.blue {
+    color: rgba(114,217,228,0.9);
+}
+h2 {
+    transition : color 1s;
+}
