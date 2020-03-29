@@ -3,7 +3,7 @@
 function switchTheme(event) {
     if (event.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
-        alert('Ça pique les yeux hein ?');
+        alert('Il va faire tout noir !');
     }
     else {
         document.documentElement.setAttribute('data-theme', 'light');
@@ -27,7 +27,7 @@ for (let i = 0; i < changeColor.length; i++) {
 
 // A little game
 
-    let initGame = document.querySelector('.playGame')
+let initGame = document.querySelector('.playGame')
 
 initGame.addEventListener('click', function () {
     var demo = window.confirm("On va jouer à un jeu >:ˆ)")
@@ -56,3 +56,22 @@ initGame.addEventListener('click', function () {
         alert('Looooooseeeeeer :ˆ(')
     }
 })
+
+// Modale
+
+var modal = document.getElementById('myModal');
+var img = document.getElementById('myImg');
+var modalImg =document.getElementById('img01');
+var captionText = document.getElementById('caption');
+
+img.onclick = function() {
+    modal.style.display = 'block';
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName('close')[0];
+
+span.onclick = function() {
+    modal.style.display = 'none';
+}
